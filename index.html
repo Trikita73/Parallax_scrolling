@@ -10,30 +10,39 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- scripts -->
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="js/main.js" defer></script>
 
 </head>
 <body>
-    <!-- header -->
-    <header class="main_header">
-        <div class="layers">
-             <div class="layer__header">
-                <div class="layers__caption">Welcom to Parallax</div>
-                <div class="layers_title">Fairy Forest</div>
-             </div>
-             <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
-             <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
-             <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+    <!-- wrapper for scroll -->
+    <div class="wrapper">
+        <div class="content">
+            <!-- header -->
+            <header class="main_header">
+                <div class="layers">
+                    <div class="layer__header">
+                        <div class="layers__caption">Welcom to Parallax</div>
+                        <div class="layers_title">Fairy Forest</div>
+                    </div>
+                    <!-- background -->
+                    <div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+                    <div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+                    <div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+                </div>
+            </header>
+            <!-- article -->
+            <article class="main_article" style="background-image: url(img/dungeon.jpg)">
+                <div class="main-article__content">
+                    <h2 class="main-article__header">to be continued</h2>
+                    <p class="main-article__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis tempora nemo excepturi vitae quaerat 
+                        et qui ea eveniet corrupti quisquam unde, tenetur pariatur deserunt adipisci, dolores obcaecati molestias aliquam earum reprehenderit! Repellat!</p>  
+                </div>
+                <div class="copy">© TriKita73</div>
+            </article>
         </div>
-    </header>
-    <!-- article -->
-    <article class="main_article" style="background-image: url(img/dungeon.jpg)">
-        <div class="main-article__content">
-            <h2 class="main-article__header">to be continued</h2>
-            <p class="main-article__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis tempora nemo excepturi vitae quaerat 
-                et qui ea eveniet corrupti quisquam unde, tenetur pariatur deserunt adipisci, dolores obcaecati molestias aliquam earum reprehenderit! Repellat!</p>  
-        </div>
-        <div class="copy">© TriKita73</div>
-    </article>
+    </div>
 </body>
 </html>
